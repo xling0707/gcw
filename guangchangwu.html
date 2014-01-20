@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://list.video.baidu.com/pc_static/common/reset.css" />
+    <script type="text/javascript" src="http://list.video.baidu.com/pc_static/common/tangram-min.js"></script>
+    <script type="text/javascript" src="http://list.video.baidu.com/pc_static/common/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="http://list.video.baidu.com/pc_static/common/underscore-min.js"></script>
+    <script type="text/javascript" src="http://list.video.baidu.com/pc_static/common/backbone-min.js"></script>
+    <link rel="stylesheet" href="guangchangwu.css" />
+</head>
+<body>
+<div class="gcw-header">
+</div><!--END header-->
+<div class="gcw-main">
+  <div class="gcw-banner"><h1>全民广场舞</h1></div>
+  <div class="gcw-content">
+      <div class="gcw-tab-head"></div>
+      <div class="gcw-tab-content"></div>
+  </div>
+  <div class="gcw-hot"></div>
+</div><!--END main-->
+<div class="gcw-footer">
+
+</div><!--END footer-->
+
+<script type="text/template" id="tpl-video">
+    <%if(data&&data.length){%>
+        <ul class="gcw-video">
+            <%_.each(data,function(v,index){%>
+                <li class="gcw-video-item">
+                    <a class="gcw-video-link" href="" title="<%-v.title%>">
+                        <img class="gcw-video-image" src="<%-v.image||v.placeholder%>" alt="<%-v.title%>" />
+                        <%if(v.host || v.duration){%>
+                        <%if(v.host){%><span class="gcw-video-host"><%-v.host%></span><%}%>
+                        <%if(v.duration){%><span class="gcw-video-duration"><%-v.duration%></span><%}%>
+                        <sapn class="gcw-bg"></sapn>
+                        <%}%>
+                    </a>
+                    <%if(v.title){%><a class="gcw-video-title" href="" title="<%-v.title%>"><%-v.title%></a><%}%>
+                    <%if(v.brief){%><p class="gcw-video-intro"><%-v.brief%></p><%}%>
+                    <%if(v.date){%><p class="gcw-video-date"><%-v.date%></p><%}%>
+                </li>
+            <%});%>
+        </ul>
+    <%}else{%>
+        <div>没有内容</div>
+    <%}%>
+</script> <!-- video template-->
+
+<script type="text/template" id="tpl-top">
+    <%if(data&&data.length){%>
+        <ul class="gcw-top">
+            <%_.each(data,function(v,index){%>
+                <li class="gcw-top-item">
+                    <a class="gcw-top-link" href="" title="<%-v.title%>" target="_blank"><%-v.title%></a>
+                </li>
+            <%});%>
+        </ul>
+    <%}%>
+</script><!-- top template -->
+
+<script type="text/template" id="tpl-selector">
+    <%if(data&&data.length){%>
+       <ul class="gcw-selector">
+           <%_.each(data,function(v,index){%>
+                <li class="gcw-selector">
+                    <a class="gcw-selector-anchor" href="#" title="<%-v.title%>" target="_blank"><%-v.title%></a>
+                </li>
+           <%})%>
+       </ul>
+    <%}%>
+</script><!-- selector template -->
+
+<script src="guangchangwu.js"></script> <!--END guangchangwu.js-->
+</body>
+</html>
