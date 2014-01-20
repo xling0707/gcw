@@ -1,0 +1,48 @@
+//头部
+//背景色
+@top-h-bgcolor:#769ee3;
+//文字颜色
+@top-h-color:#fff;
+//文字大小
+@top-h-f-size:16px;
+//高度
+@top-h-height:36px;
+// 宽度
+@top-width:144px;
+
+// 内容
+@top-c-bgcolor:#fcfcfc;
+@top-c-boder-color:#e7e7e7;
+@top-c-padding:15px 20px;
+
+@top-c-color :#666;
+
+.gcw-top{
+  width: @top-width;
+  .gcw-top-header{
+    h2{
+      background: @top-h-bgcolor;
+      font-size: @top-h-f-size;
+      color: @top-h-color;
+      height: @top-h-height;
+      line-height: @top-h-height;
+      text-align: center;
+    }
+  }
+  .gcw-top-content{
+    border: 1px solid @top-c-boder-color;
+    background: @top-c-bgcolor;
+    padding: @top-c-padding;
+  }
+  .gcw-top-list{
+    list-style: none;
+    li{
+      height: 20px;
+      line-height: 20px;
+    }
+  }
+  .gcw-top-link{
+    color: @top-c-color;
+    font-size: 14px;
+  }
+}

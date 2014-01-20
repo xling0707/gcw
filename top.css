@@ -1,0 +1,27 @@
+.gcw-top {
+  width: 144px;
+}
+.gcw-top .gcw-top-header h2 {
+  background: #769ee3;
+  font-size: 16px;
+  color: #ffffff;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+.gcw-top .gcw-top-content {
+  border: 1px solid #e7e7e7;
+  background: #fcfcfc;
+  padding: 15px 20px;
+}
+.gcw-top .gcw-top-list {
+  list-style: none;
+}
+.gcw-top .gcw-top-list li {
+  height: 20px;
+  line-height: 20px;
+}
+.gcw-top .gcw-top-link {
+  color: #666666;
+  font-size: 14px;
+}
