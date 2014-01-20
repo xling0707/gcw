@@ -1,0 +1,41 @@
+.gcw-main {
+  background: #f3f2f3;
+}
+.gcw-main .gcw-banner {
+  background: url("banner.jpg") no-repeat center center scroll;
+  height: 220px;
+}
+.gcw-main .gcw-banner h1 {
+  text-indent: -9999px;
+}
+.gcw-main .gcw-content {
+  width: 986px;
+  margin: 0 auto;
+}
+.gcw-top {
+  width: 144px;
+}
+.gcw-top .gcw-top-header h2 {
+  background: #769ee3;
+  font-size: 16px;
+  color: #ffffff;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+.gcw-top .gcw-top-content {
+  border: 1px solid #e7e7e7;
+  background: #fcfcfc;
+  padding: 15px 20px;
+}
+.gcw-top .gcw-top-list {
+  list-style: none;
+}
+.gcw-top .gcw-top-list li {
+  height: 20px;
+  line-height: 20px;
+}
+.gcw-top .gcw-top-link {
+  color: #666666;
+  font-size: 14px;
+}
